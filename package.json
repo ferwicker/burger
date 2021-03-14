@@ -1,0 +1,24 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Eat-Da-Burger! web app where users can add burgers to a list and then mark them as devoured",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferwicker/burger.git"
+  },
+  "author": "Fer Wicker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferwicker/burger/issues"
+  },
+  "homepage": "https://github.com/ferwicker/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "mysql": "^2.18.1"
+  }
+}
