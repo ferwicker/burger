@@ -1,3 +1,89 @@
 body {
-    background-color: azure;
+    background-color: #f4c734;
+    color: #383838;
+    font-family: montserrat, sans-serif;
+    padding: 20px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    color: #b20000;
+    font-family: peachy-keen-jf, sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    font-style: normal;
+    text-shadow: 3px 3px 0px #C9A304;
+    margin-bottom: 40px;
+}
+
+.burger-image {
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+/* burger list styles */
+
+.burger-item {
+    margin-bottom: 20px;
+}
+
+.burger-id {
+    color: #b20000;
+    font-size: 14px;
+    font-weight: 800;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    border: solid 3px #b20000;
+}
+
+.burger-name {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.devour-button {
+    background-color: #b20000;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 3px 3px 0px #C9A304;
+    color: #f4c734;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 5px 20px;
+    text-transform: uppercase;
+}
+
+.devoured {
+    background-color: #C9A304;
+    color: #b20000;
+    box-shadow: none;
+}
+
+/* form styles */
+
+.form-input {
+    min-height: 150px;
+    width: 400px;
+    border-radius: 15px;
+    border: solid 2px #b20000;
+    margin-bottom: 20px;
+}
+
+.submit-button {
+    background-color: #b20000;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 3px 3px 0px #C9A304;
+    color: #f4c734;
+    font-family: peachy-keen-jf, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 8px 24px;
+}
+
+.footer-text {
+    font-size: 14px;
+    margin-top: 40px;
 }

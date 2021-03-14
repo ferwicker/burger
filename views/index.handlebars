@@ -1,22 +1,40 @@
-<h1>Eat-Da-Burger</h1>
-
-<h2>Burgers to Devour</h2>
-
-<ul>
-{{#each burgers}}
-{{#unless devoured}}
-<h3>{{burger_name}}</h3>
-{{/unless}}
-{{/each}}
-</ul>
-
-<h2>Burgers I have Devoured</h2>
-
-<ul>
-{{#each burgers}}
-{{#if devoured}}
-<h3>{{burger_name}}</h3>
-{{/if}}
-{{/each}}
-</ul>
-
+<section class="container">
+    <img class="burger-image" src="/assets/images/burger.svg" alt="burger">
+    <h1>Eat-Da-Burger</h1>
+    <div class="row">
+        <div class="col-sm-5">
+            <ul>
+                {{#each burgers}}
+                    {{#unless devoured}}
+                        <div class="d-flex justify-content-between align-items-center burger-item">
+                            <div class="burger-id d-flex justify-content-center align-items-center">{{id}}</div>
+                            <div class="burger-name">{{burger_name}}</div>
+                            <button class="devour-button">Devour!</button>
+                        </div>
+                    {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-4">
+            devoured burgers go here
+            <ul>
+                {{#each burgers}}
+                    {{#if devoured}}
+                        <div class="d-flex justify-content-between align-items-center burger-item">
+                            <div class="burger-id d-flex justify-content-center align-items-center">{{id}}</div>
+                            <div class="burger-name">{{burger_name}}</div>
+                            <div class="devour-button devoured">Devoured!</div>
+                        </div>
+                    {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    <div class="d-flex flex-column justify-content-center align-items-center">
+        <form class="d-flex flex-column align-items-center" style="margin-top: 40px;">
+            <input class="form-input" type="text">
+            <input class="submit-button" type="submit" value="Submit">
+        </form>
+    </div>
+</section>
