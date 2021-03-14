@@ -38,6 +38,9 @@ document.addEventListener('DOMContentLoaded', (event) => { //waits until page lo
     submitForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const burgerName = document.getElementById('burger-input').value.trim();
+        if (burgerName === ''){
+            return
+        }
         const newBurger = {
             burger_name: burgerName,
         };
