@@ -9,15 +9,14 @@
                         <div class="d-flex justify-content-between align-items-center burger-item">
                             <div class="burger-id d-flex justify-content-center align-items-center">{{id}}</div>
                             <div class="burger-name">{{burger_name}}</div>
-                            <button class="devour-button">Devour!</button>
+                            <button class="devour-button" data-id="{{id}}">Devour!</button>
                         </div>
                     {{/unless}}
                 {{/each}}
             </ul>
         </div>
-        <div class="col-sm-3"></div>
-        <div class="col-sm-4">
-            devoured burgers go here
+        <div class="col-sm-2"></div>
+        <div class="col-sm-5">
             <ul>
                 {{#each burgers}}
                     {{#if devoured}}
