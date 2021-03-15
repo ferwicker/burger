@@ -58,6 +58,7 @@ a:hover {
     border: none;
     box-shadow: 3px 3px 0px #C9A304;
     color: #f4c734;
+    cursor: pointer;
     font-size: 16px;
     font-weight: 800;
     padding: 5px 20px;
@@ -67,10 +68,24 @@ a:hover {
 .devoured {
     background-color: #C9A304;
     color: #b20000;
+    cursor: not-allowed;
     box-shadow: none;
 }
 
 /* form styles */
+
+#burgerForm {
+    width: 100%;
+}
+
+.form-instruction {
+    color: #b20000;
+    font-family: peachy-keen-jf, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: normal;
+    margin: 40px 0 0 0;
+}
 
 .form-input {
     min-height: 150px;
@@ -86,6 +101,7 @@ a:hover {
     border-radius: 30px;
     box-shadow: 3px 3px 0px #C9A304;
     color: #f4c734;
+    cursor: pointer;
     font-family: peachy-keen-jf, sans-serif;
     font-size: 24px;
     font-weight: 400;
@@ -95,4 +111,37 @@ a:hover {
 .footer-text {
     font-size: 14px;
     margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .burger-image {
+        height: 150px;
+    }
+
+    .burger-name {
+        font-size: 20px;
+    }
+
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+
+    .devour-button {
+        font-size: 14px;
+    }
+
+    .form-input {
+        min-height: 100px;
+        width: 100%;
+        border-radius: 10px;
+    }
 }
