@@ -1,7 +1,7 @@
 # Eat-Da-Burger!
 This full stack web application uses a remote server and database to manage a list of burgers submitted by users. The users can interact with the front end to create new items in the database and update existing items.
 [See deployed application.](https://shrouded-brook-04183.herokuapp.com/)
-[See project page on my portfolio.](https://ferwicker.github.io/portfolio/projects/eat-da-burger/)
+[See project page on my portfolio.](http://ferwicker.com/projects/eat-da-burger/)
 
 <img src='./readme-assets/burger-image.jpg' style='width: 500px; margin: 40px 0;'>
 
